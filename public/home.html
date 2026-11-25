@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RENDI – AI can run your back office. We set it up for you.</title>
+<meta name="description" content="Done-for-you AI setup for owner-operators in food, services, and trades. One 15-minute call. We connect your tools, pick the right AI, and hand it to you working. English y español.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body { margin: 0; background: #F4F3EE; }
+a { color: #141413; } a:hover { color: #55554F; }
+@media (max-width: 960px) {
+  .nav-links { display: none !important; }
+}
+.funnel-outer { display: flex; justify-content: center; overflow: hidden; height: 790px; }
+.funnel { width: 680px; height: 770px; position: relative; flex: 0 0 auto; transform-origin: top center; }
+@media (max-width: 760px) {
+  .funnel-outer { height: 440px; }
+  .funnel { transform: scale(0.5); }
+}
+@keyframes dashflow { to { stroke-dashoffset: -36; } }
+.flowline { animation: dashflow 2.4s linear infinite; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.bob { animation: bob 5.5s ease-in-out infinite; }
+.marquee { overflow: hidden; }
+.marquee-track { display: flex; width: max-content; animation: scrollx 32s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+@keyframes scrollx { to { transform: translateX(-50%); } }
+.vs-arrow svg { transform: rotate(0deg); }
+@media (max-width: 760px) { .vs-arrow svg { transform: rotate(90deg); } }
+@media (prefers-reduced-motion: reduce) {
+  .flowline, .bob, .marquee-track { animation: none; }
+  .marquee-track { width: auto; }
+  .marquee-track > div { flex-wrap: wrap; row-gap: 14px; }
+  .marquee-track > [aria-hidden="true"] { display: none; }
+}
+</style>
+
+</head>
+<body>
+
+<div style="display: flex; flex-direction: column; font-family: Inter, system-ui, sans-serif; color: #141413; background: #F4F3EE; min-height: 100%">
+
+  <!-- NAV -->
+  <nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; padding: 18px 24px; background: #F4F3EE; border-bottom: 1px solid #DDDCD4">
+    <a href="#top" style="display: flex; align-items: center; gap: 8px; text-decoration: none; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; color: #141413">
+      <span aria-hidden="true" style="color: #141413; font-size: 22px; line-height: 1">✱</span>
+      RENDI
+    </a>
+    <div class="nav-links" style="display: flex; gap: 24px; margin-left: 24px; font-size: 15px; font-weight: 500">
+      <a href="#carlos" style="text-decoration: none">Carlos</a>
+      <a href="#connectors" style="text-decoration: none">How it connects</a>
+      <a href="#how" style="text-decoration: none">How it works</a>
+      <a href="#pricing" style="text-decoration: none">Pricing</a>
+    </div>
+    <div style="margin-left: auto; display: flex; align-items: center; gap: 16px">
+      <span style="font-size: 13px; font-weight: 600; letter-spacing: 0.04em; color: #55554F">EN | ES</span>
+      <a href="#cta" style="text-decoration: none; background: #141413; color: #FFFFFF; font-weight: 600; font-size: 15px; padding: 12px 20px; border-radius: 999px">Book your call</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" style="background: #D8F500; padding: 72px 24px 0; overflow: hidden">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 48px">
+      <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px; padding-bottom: 88px">
+        <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(44px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.02em; max-width: 13ch">AI can run your back office.</h1>
+        <p style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.2; max-width: 24ch">We set it up for you.</p>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; max-width: 52ch">For owner-operators in food, services, and trades. You take one 15-minute phone call. We connect your tools, pick the right AI, and hand it to you working.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 8px">
+          <a href="#cta" style="text-decoration: none; background: #141413; color: #FFFFFF; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 999px">Book your 15-min call</a>
+          <a href="#how" style="text-decoration: none; background: transparent; color: #141413; font-weight: 600; font-size: 17px; padding: 16px 28px; border-radius: 999px; border: 2px solid #141413">See how it works</a>
+        </div>
+        <p style="margin: 0; font-size: 14px; font-weight: 500; color: #3A3A35">No tech skills needed. English y español.</p>
+      </div>
+      <div style="flex: 0 1 360px; display: flex; justify-content: center; min-width: 0; align-self: flex-end">
+        <div style="transform: rotate(5deg) translateY(30px)">
+          <div style="width: 300px; background: #141413; border-radius: 44px 44px 6px 6px; padding: 12px 12px 0; box-shadow: 0 30px 60px rgba(20,20,19,0.28)">
+            <div style="background: #FFFFFF; border-radius: 34px 34px 0 0; overflow: hidden; display: flex; flex-direction: column">
+              <div style="background: #F6F6F8; border-bottom: 1px solid #E8E8EC; padding: 10px 16px 12px; display: flex; flex-direction: column; align-items: center; gap: 6px">
+                <div style="width: 100%; display: flex; align-items: center; justify-content: space-between; color: #141413; font-size: 12px; font-weight: 600">
+                  <span>6:45</span>
+                  <span>LTE</span>
+                </div>
+                <span style="width: 42px; height: 42px; border-radius: 999px; background: #141413; display: flex; align-items: center; justify-content: center">
+                  <span aria-hidden="true" style="color: #D8F500; font-size: 20px; line-height: 1">✱</span>
+                </span>
+                <span style="font-size: 12px; font-weight: 600; color: #141413">Assistant</span>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 8px; padding: 12px 12px 6px; background: #FFFFFF">
+                <span style="align-self: center; font-size: 11px; font-weight: 600; color: #6D6D72">Today 6:45 PM</span>
+                <div style="align-self: flex-end; background: #1F7AFE; color: #FFFFFF; padding: 9px 13px; border-radius: 18px 18px 4px 18px; font-size: 13px; line-height: 1.45; max-width: 86%">Did the Whitaker invoice go out?</div>
+                <div style="align-self: flex-start; background: #E9E9EB; color: #141413; padding: 9px 13px; border-radius: 18px 18px 18px 4px; font-size: 13px; line-height: 1.45; max-width: 86%">Sent yesterday. $520, due Friday. Want a reminder set for Thursday?</div>
+                <div style="align-self: flex-end; background: #1F7AFE; color: #FFFFFF; padding: 9px 13px; border-radius: 18px 18px 4px 18px; font-size: 13px; line-height: 1.45; max-width: 86%">How did we do today?</div>
+                <div style="align-self: flex-start; background: #E9E9EB; color: #141413; padding: 9px 13px; border-radius: 18px 18px 18px 4px; font-size: 13px; line-height: 1.45; max-width: 86%">$1,874 across 143 orders. Your best Tuesday this month.</div>
+                <span style="align-self: flex-end; font-size: 10px; font-weight: 600; color: #6D6D72">Delivered</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; padding: 6px 12px 16px; background: #FFFFFF">
+                <span style="flex: 1 1 auto; border: 1px solid #D9D9DE; color: #6D6D72; border-radius: 999px; padding: 9px 14px; font-size: 13px; font-weight: 500">Text message</span>
+                <span aria-hidden="true" style="width: 34px; height: 34px; border-radius: 999px; background: #1F7AFE; display: flex; align-items: center; justify-content: center; flex: 0 0 auto">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="#FFFFFF" aria-hidden="true"><path d="M12 4l6 6h-4v10h-4V10H6l6-6Z"></path></svg>
+                </span>
+              </div>
+              <span aria-hidden="true" style="display: block; height: 44px; background: #FFFFFF"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- CARLOS -->
+  <section id="carlos" style="position: relative; overflow: hidden; background: #141413; color: #FFFFFF; padding: 96px 24px">
+    <img src="/assets/drip-trailer.jpg" alt="" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 58%; filter: blur(1.5px); transform: scale(1.04)">
+    <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,14,13,0.88) 0%, rgba(14,14,13,0.78) 45%, rgba(14,14,13,0.92) 100%)"></div>
+    <div style="max-width: 980px; margin: 0 auto; position: relative; display: flex; flex-direction: column; gap: 32px">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 44px">
+        <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+          <h2 style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(30px, 3.6vw, 46px); line-height: 1.22">“When I closed the truck for the day, the rest of the work began. Now I text one question and it gets done.”</h2>
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="width: 56px; height: 56px; border-radius: 14px; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 8px; box-sizing: border-box">
+              <img src="/assets/drip-logo.png" alt="Drip logo" style="max-width: 100%; max-height: 100%; object-fit: contain">
+            </span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px">Carlos</span>
+              <span style="font-size: 13px; font-weight: 600; color: #D8D7CE">Owner, Drip · Salt Lake City · the first business we set up</span>
+            </span>
+          </div>
+        </div>
+        <div style="flex: 0 1 400px; min-width: 260px; display: flex; flex-direction: column; gap: 10px">
+          <img src="/assets/edgar-carlos.jpg" alt="Edgar with Carlos and family at the Drip trailer at night" style="width: 100%; border-radius: 20px; border: 1px solid #3A3A35; display: block">
+          <span style="font-size: 13px; font-weight: 500; color: #D8D7CE">Edgar with Carlos at the Drip trailer.</span>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 12px">
+        <div style="flex: 1 1 320px; background: #222220; border: 1px solid #3A3A35; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 16px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: #B6B6AD">BEFORE</span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px">Close the truck. Start the second shift.</span>
+          <div style="display: flex; gap: 12px; align-items: baseline">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; color: #55554F; flex: 0 0 auto">1</span>
+            <span style="flex: 1 1 auto; font-size: 16px; line-height: 1.5; color: #D8D7CE">Open the point of sale and pull the day's sales.</span>
+            <span style="flex: 0 0 auto; font-size: 12px; font-weight: 700; color: #B6B6AD; background: #2A2A27; padding: 3px 9px; border-radius: 999px">15 min</span>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: baseline">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; color: #55554F; flex: 0 0 auto">2</span>
+            <span style="flex: 1 1 auto; font-size: 16px; line-height: 1.5; color: #D8D7CE">Log into the bank and check the deposits.</span>
+            <span style="flex: 0 0 auto; font-size: 12px; font-weight: 700; color: #B6B6AD; background: #2A2A27; padding: 3px 9px; border-radius: 999px">10 min</span>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: baseline">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; color: #55554F; flex: 0 0 auto">3</span>
+            <span style="flex: 1 1 auto; font-size: 16px; line-height: 1.5; color: #D8D7CE">Open the card processor and verify the payouts.</span>
+            <span style="flex: 0 0 auto; font-size: 12px; font-weight: 700; color: #B6B6AD; background: #2A2A27; padding: 3px 9px; border-radius: 999px">10 min</span>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: baseline">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 16px; color: #55554F; flex: 0 0 auto">4</span>
+            <span style="flex: 1 1 auto; font-size: 16px; line-height: 1.5; color: #D8D7CE">Line them all up and make sure they match.</span>
+            <span style="flex: 0 0 auto; font-size: 12px; font-weight: 700; color: #B6B6AD; background: #2A2A27; padding: 3px 9px; border-radius: 999px">15 min</span>
+          </div>
+          <div style="border-top: 1px solid #3A3A35; padding-top: 14px; margin-top: 4px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 36px; line-height: 1.1; color: #FFFFFF">50 minutes</span>
+            <span style="font-size: 14px; font-weight: 500; color: #B6B6AD">Every night. After close.</span>
+          </div>
+        </div>
+
+        <div class="vs-arrow" aria-hidden="true" style="align-self: center; flex: 0 0 auto; width: 46px; height: 46px; border-radius: 999px; background: #D8F500; display: flex; align-items: center; justify-content: center">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="#141413"><path d="M4 11h12l-4-4 1.4-1.4L20 12l-6.6 6.4L12 17l4-4H4v-2Z"></path></svg>
+        </div>
+
+        <div style="flex: 1 1 320px; background: #1B1B19; border: 1px solid #D8F500; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; color: #D8F500">AFTER · TOOLS CONNECTED</span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px">Send one text.</span>
+          <div style="align-self: flex-end; background: #2A2A27; color: #FFFFFF; padding: 13px 17px; border-radius: 18px 18px 4px 18px; font-size: 16px; line-height: 1.45; max-width: 90%">How did we do today?</div>
+          <div style="align-self: flex-start; background: #D8F500; color: #141413; padding: 13px 17px; border-radius: 18px 18px 18px 4px; font-size: 16px; line-height: 1.45; max-width: 90%">$1,874 in sales across 143 orders. Your best Tuesday this month.</div>
+          <div style="align-self: flex-end; background: #2A2A27; color: #FFFFFF; padding: 13px 17px; border-radius: 18px 18px 4px 18px; font-size: 16px; line-height: 1.45; max-width: 90%">Did my deposits come through?</div>
+          <div style="align-self: flex-start; background: #D8F500; color: #141413; padding: 13px 17px; border-radius: 18px 18px 18px 4px; font-size: 16px; line-height: 1.45; max-width: 90%">Yes. $9,400 landed this morning. It matches your weekend sales.</div>
+          <div style="border-top: 1px solid rgba(216,245,0,0.35); padding-top: 14px; margin-top: 4px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 36px; line-height: 1.1; color: #D8F500">30 seconds</span>
+            <span style="font-size: 14px; font-weight: 500; color: #B6B6AD">One message. His tools answer.</span>
+          </div>
+        </div>
+      </div>
+      <p style="margin: 0; font-size: 14px; font-weight: 500; color: #B6B6AD">Sample conversation. Same questions, same tools, just connected.</p>
+    </div>
+  </section>
+
+  <!-- CONNECTORS -->
+  <section id="connectors" style="background: #F4F3EE; padding: 96px 24px">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px">
+      <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.01em; max-width: 20ch">Your information, in one place.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #55554F; max-width: 56ch">Your tools already have the answers. Connectors bring them together so you can just ask. Nothing changes in how you work. Your tools stay.</p>
+
+      <div class="funnel-outer" style="margin-top: 16px">
+        <div class="funnel">
+          <svg aria-hidden="true" viewBox="0 0 680 770" style="position: absolute; inset: 0; width: 100%; height: 100%">
+            <path d="M120 160 C 140 380, 290 520, 334 612" fill="none" stroke="#B4B3A8" stroke-width="2" stroke-dasharray="4 8" class="flowline"></path>
+            <path d="M350 140 C 360 320, 345 500, 341 610" fill="none" stroke="#B4B3A8" stroke-width="2" stroke-dasharray="4 8" class="flowline"></path>
+            <path d="M120 532 C 190 585, 290 612, 331 625" fill="none" stroke="#B4B3A8" stroke-width="2" stroke-dasharray="4 8" class="flowline"></path>
+            <path d="M540 502 C 480 570, 390 608, 349 622" fill="none" stroke="#B4B3A8" stroke-width="2" stroke-dasharray="4 8" class="flowline"></path>
+            <path d="M350 600 C 346 606, 343 609, 341 613" fill="none" stroke="#B4B3A8" stroke-width="2" stroke-dasharray="4 8" class="flowline"></path>
+            <path d="M140 284 C 170 440, 290 540, 336 616" fill="none" stroke="#141413" stroke-width="2.5"></path>
+            <path d="M530 334 C 505 460, 405 560, 347 616" fill="none" stroke="#141413" stroke-width="2.5"></path>
+            <path d="M320 396 C 328 480, 336 550, 340 614" fill="none" stroke="#141413" stroke-width="2.5"></path>
+            <path d="M340 672 L 340 770" fill="none" stroke="#141413" stroke-width="2.5"></path>
+          </svg>
+
+          <!-- Faded events -->
+          <div style="position: absolute; left: 16px; top: 92px; background: #EDECE4; color: #85847A; border-radius: 14px; padding: 12px 16px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-weight: 700; font-size: 14px">“Ponle dos hojas”</span>
+            <span style="font-size: 12px; font-weight: 600">Message</span>
+          </div>
+          <div style="position: absolute; left: 240px; top: 64px; background: #EDECE4; color: #85847A; border-radius: 14px; padding: 12px 16px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-weight: 700; font-size: 14px">Invoice Whitaker · $520</span>
+            <span style="font-size: 12px; font-weight: 600">Unsent</span>
+          </div>
+          <div style="position: absolute; left: 16px; top: 466px; background: #EDECE4; color: #85847A; border-radius: 14px; padding: 12px 16px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-weight: 700; font-size: 14px">Unpaid · $240</span>
+            <span style="font-size: 12px; font-weight: 600">14 days ago</span>
+          </div>
+          <div style="position: absolute; left: 432px; top: 436px; background: #EDECE4; color: #85847A; border-radius: 14px; padding: 12px 16px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-weight: 700; font-size: 14px">Deposit · $9,400</span>
+            <span style="font-size: 12px; font-weight: 600">Bank · today</span>
+          </div>
+          <div style="position: absolute; left: 252px; top: 536px; background: #EDECE4; color: #85847A; border-radius: 14px; padding: 12px 16px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-weight: 700; font-size: 14px">New review</span>
+            <span style="font-size: 12px; font-weight: 600">Google · 2h ago</span>
+          </div>
+
+          <!-- Highlighted events -->
+          <div class="bob" style="position: absolute; left: 56px; top: 202px; background: #FFFFFF; border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 28px rgba(20,20,19,0.10)">
+            <span style="width: 36px; height: 36px; border-radius: 999px; background: #D8F500; display: flex; align-items: center; justify-content: center; flex: 0 0 auto">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="#141413"><path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2Z"></path></svg>
+            </span>
+            <span aria-hidden="true" style="display: flex; align-items: flex-end; gap: 3px; height: 22px">
+              <span style="width: 3px; height: 8px; background: #141413; border-radius: 2px"></span>
+              <span style="width: 3px; height: 16px; background: #141413; border-radius: 2px"></span>
+              <span style="width: 3px; height: 22px; background: #141413; border-radius: 2px"></span>
+              <span style="width: 3px; height: 12px; background: #141413; border-radius: 2px"></span>
+              <span style="width: 3px; height: 18px; background: #141413; border-radius: 2px"></span>
+              <span style="width: 3px; height: 9px; background: #141413; border-radius: 2px"></span>
+            </span>
+            <span style="display: flex; flex-direction: column; gap: 1px">
+              <span style="font-weight: 700; font-size: 16px">0:42</span>
+              <span style="font-size: 12px; font-weight: 600; color: #55554F">Voice note</span>
+            </span>
+          </div>
+
+          <div class="bob" style="position: absolute; left: 416px; top: 136px; background: #FFFFFF; border-radius: 14px; padding: 16px 18px; width: 220px; box-sizing: border-box; font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 13px; box-shadow: 0 10px 28px rgba(20,20,19,0.10); animation-delay: -1.8s">
+            <div style="font-weight: 700; letter-spacing: 0.1em; text-align: center; padding-bottom: 8px; border-bottom: 1px dashed #B4B3A8">RECEIPT</div>
+            <div style="display: flex; justify-content: space-between; padding-top: 8px"><span>Material</span><span>$62.30</span></div>
+            <div style="display: flex; justify-content: space-between; padding: 4px 0 8px"><span>Gas</span><span>$41.10</span></div>
+            <div style="display: flex; justify-content: space-between; font-weight: 700; border-top: 1px dashed #B4B3A8; padding-top: 8px"><span>TOTAL</span><span>$103.40</span></div>
+          </div>
+
+          <div class="bob" style="position: absolute; left: 150px; top: 322px; background: #FFFFFF; border-radius: 16px; padding: 14px 18px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 28px rgba(20,20,19,0.10); animation-delay: -3.2s">
+            <span style="width: 36px; height: 36px; border-radius: 10px; background: #141413; display: flex; align-items: center; justify-content: center; flex: 0 0 auto">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="#FFFFFF"><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2H3V6Zm0 4h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-8Zm3 5h5v2H6v-2Z"></path></svg>
+            </span>
+            <span style="display: flex; flex-direction: column; gap: 1px">
+              <span style="font-weight: 700; font-size: 16px">Card · ABC Supply</span>
+              <span style="font-size: 12px; font-weight: 600; color: #55554F">Material</span>
+            </span>
+            <span style="font-weight: 700; font-size: 18px; margin-left: 10px">$136</span>
+          </div>
+
+          <!-- Hub pill -->
+          <div style="position: absolute; left: 50%; top: 612px; transform: translateX(-50%); background: #FFFFFF; border-radius: 999px; padding: 12px 28px 12px 12px; display: flex; align-items: center; gap: 12px; box-shadow: 0 12px 32px rgba(20,20,19,0.14)">
+            <span aria-hidden="true" style="width: 42px; height: 42px; border-radius: 999px; background: #D8F500; display: flex; align-items: center; justify-content: center; flex: 0 0 auto">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#141413" aria-hidden="true"><path d="M7 1h10a3 3 0 0 1 3 3v16a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Zm0 2a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H7Zm3 15h4v2h-4v-2Z"></path></svg>
+            </span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; white-space: nowrap">Your phone</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+        <div style="background: #D8F500; border-radius: 999px; padding: 12px 20px; font-weight: 600; font-size: 15px">You ask by text</div>
+        <div style="background: #D8F500; border-radius: 999px; padding: 12px 20px; font-weight: 600; font-size: 15px">You ask by voice</div>
+        <div style="background: #D8F500; border-radius: 999px; padding: 12px 20px; font-weight: 600; font-size: 15px">You get alerts before problems</div>
+      </div>
+      <p style="margin: 0; text-align: center; font-size: 15px; font-weight: 500; color: #55554F">Receipts, deposits, invoices, voice notes. Everything lands in one place, already organized.</p>
+      <div style="display: flex; justify-content: center; margin-top: 8px">
+        <a href="#cta" style="text-decoration: none; background: #141413; color: #FFFFFF; font-weight: 600; font-size: 16px; padding: 14px 26px; border-radius: 999px">Book your 15-min call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS TYPES -->
+  <section style="background: #FFFFFF; padding: 96px 24px; border-top: 1px solid #DDDCD4">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px">
+      <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.01em; max-width: 22ch">It works the same in every business.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 16px">
+        <div style="background: #F4F3EE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <span style="width: 48px; height: 48px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E5E4DC; display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 7px; box-sizing: border-box">
+              <img src="/assets/drip-logo.png" alt="Drip logo" style="max-width: 100%; max-height: 100%; object-fit: contain">
+            </span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.2">Drip</span>
+              <span style="font-size: 13px; font-weight: 600; color: #55554F">Food</span>
+            </span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #55554F">Food cost and inventory are the fight. Track what you buy and what you sell, and reprice the menu when supplies go up.</p>
+          <p style="margin: 0; font-size: 16px; font-weight: 600; line-height: 1.5">“What's my food cost this week?”</p>
+        </div>
+        <div style="background: #F4F3EE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <span style="width: 48px; height: 48px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E5E4DC; display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 5px; box-sizing: border-box">
+              <img src="/assets/brisas.png" alt="Brisas Cleaning Services logo" style="max-width: 100%; max-height: 100%; object-fit: contain">
+            </span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.2">Brisas Cleaning Services</span>
+              <span style="font-size: 13px; font-weight: 600; color: #55554F">Services</span>
+            </span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #55554F">Leads and repeat business are the fight. Market the work, answer every inquiry, and turn one-time clients into recurring ones.</p>
+          <p style="margin: 0; font-size: 16px; font-weight: 600; line-height: 1.5">“Which clients haven't rebooked this month?”</p>
+        </div>
+        <div style="background: #F4F3EE; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <span style="width: 48px; height: 48px; border-radius: 12px; background: #FFFFFF; border: 1px solid #E5E4DC; display: flex; align-items: center; justify-content: center; flex: 0 0 auto; padding: 4px; box-sizing: border-box">
+              <img src="/assets/reyes.jpg" alt="Reyes Renovation logo" style="max-width: 100%; max-height: 100%; object-fit: contain">
+            </span>
+            <span style="display: flex; flex-direction: column">
+              <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.2">Reyes Renovation</span>
+              <span style="font-size: 13px; font-weight: 600; color: #55554F">Trades</span>
+            </span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #55554F">Knowing which jobs make money is the fight. Respond to leads the minute they arrive, and update quotes and invoices when changes hit.</p>
+          <p style="margin: 0; font-size: 16px; font-weight: 600; line-height: 1.5">“Which jobs made the most profit this year?”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section style="background: #D8F500; padding: 96px 24px; overflow: hidden">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 56px">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+        <span aria-hidden="true" style="color: #141413; font-size: 30px; line-height: 1">✱</span>
+        <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.01em; max-width: 18ch">Hablamos tu idioma.</h2>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A3A35; max-width: 46ch">We work with owner-operators in food, services, and trades. People who built their business with their hands. The setup call, the walkthrough, the WhatsApp support: all of it in English o en español, whichever you think in.</p>
+        <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A3A35; max-width: 46ch; font-weight: 600">When nothing gets lost in translation, nothing gets lost in your numbers. That's how your odds improve. Tap for sound.</p>
+        <div style="margin-top: 8px">
+          <a href="#cta" style="text-decoration: none; display: inline-block; background: #141413; color: #FFFFFF; font-weight: 600; font-size: 16px; padding: 14px 26px; border-radius: 999px">Book your 15-min call</a>
+        </div>
+      </div>
+      <div style="flex: 0 0 auto; background: #141413; border-radius: 40px; padding: 10px; box-shadow: 0 30px 60px rgba(20,20,19,0.25)">
+        <video src="/assets/demo.mp4" autoplay="" muted="" loop="" playsinline="" controls="" style="display: block; width: min(320px, 78vw); aspect-ratio: 9 / 16; object-fit: cover; border-radius: 32px; background: #141413"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENT AGNOSTIC -->
+  <section style="background: #141413; color: #FFFFFF; padding: 96px 24px">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px">
+      <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.01em; max-width: 24ch">We don't sell you an agent. We match you to one.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #B6B6AD; max-width: 58ch">Every AI platform is different. We set you up on the one that fits how you work, and move you later if a better one comes along. Agent-agnostic means you are never locked in.</p>
+      <div class="marquee" style="margin-top: 16px">
+        <div class="marquee-track">
+          <div style="display: flex">
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/instinct.jpg" alt="Instinct logo" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Instinct</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Simple and friendly. A great first agent.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/harkpro.webp" alt="Hark Pro logo" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Hark Pro</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Text plus app. Fast answers on the go.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/grokbot.jpg" alt="Grok Bot logo" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Grok Bot</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Built for businesses with many moving parts.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/muse.png" alt="Muse logo" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Muse</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Strong when social media drives your sales.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/claude.png" alt="Claude logo" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Claude</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Deep work: documents, numbers, planning.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/openai.jpg" alt="OpenAI logo" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">OpenAI</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Automations that run on their own.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/gemini.png" alt="Gemini logo" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Gemini</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Strong inside Google's tools: Gmail, Calendar, Docs.</span>
+            </div>
+          </div>
+          <div aria-hidden="true" style="display: flex">
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/instinct.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Instinct</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Simple and friendly. A great first agent.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/harkpro.webp" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Hark Pro</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Text plus app. Fast answers on the go.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/grokbot.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Grok Bot</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Built for businesses with many moving parts.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/muse.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Muse</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Strong when social media drives your sales.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/claude.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Claude</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Deep work: documents, numbers, planning.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/openai.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">OpenAI</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Automations that run on their own.</span>
+            </div>
+            <div style="width: 280px; box-sizing: border-box; margin-right: 14px; flex: 0 0 auto; background: #222220; border: 1px solid #3A3A35; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 6px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 38px; height: 38px; border-radius: 10px; overflow: hidden; background: #FFFFFF; flex: 0 0 auto"><img src="/assets/gemini.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block"></span>
+                <span style="font-weight: 700; font-size: 17px">Gemini</span>
+              </div>
+              <span style="font-size: 14px; line-height: 1.5; color: #B6B6AD">Strong inside Google's tools: Gmail, Calendar, Docs.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p style="margin: 0; font-size: 13px; font-weight: 500; color: #B6B6AD">Platform logos belong to their owners.</p>
+      <div style="display: flex; justify-content: center; margin-top: 8px">
+        <a href="#cta" style="text-decoration: none; background: #D8F500; color: #141413; font-weight: 700; font-size: 16px; padding: 14px 26px; border-radius: 999px">Book your 15-min call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" style="background: #F4F3EE; padding: 96px 24px; position: relative; overflow: hidden">
+    <svg aria-hidden="true" viewBox="0 0 620 620" style="position: absolute; right: -170px; bottom: -210px; width: 600px; height: 600px">
+      <circle cx="310" cy="310" r="120" fill="none" stroke="#D8F500" stroke-width="2"></circle>
+      <circle cx="310" cy="310" r="175" fill="none" stroke="#D8F500" stroke-width="2" opacity="0.7"></circle>
+      <circle cx="310" cy="310" r="230" fill="none" stroke="#D8F500" stroke-width="2" opacity="0.45"></circle>
+      <circle cx="310" cy="310" r="285" fill="none" stroke="#D8F500" stroke-width="2" opacity="0.25"></circle>
+    </svg>
+    <svg aria-hidden="true" viewBox="0 0 620 620" style="position: absolute; left: -240px; top: -280px; width: 560px; height: 560px">
+      <circle cx="310" cy="310" r="140" fill="none" stroke="#DDDCD4" stroke-width="2"></circle>
+      <circle cx="310" cy="310" r="200" fill="none" stroke="#DDDCD4" stroke-width="2" opacity="0.7"></circle>
+      <circle cx="310" cy="310" r="260" fill="none" stroke="#DDDCD4" stroke-width="2" opacity="0.45"></circle>
+    </svg>
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; position: relative">
+      <span aria-hidden="true" style="color: #141413; font-size: 30px; line-height: 1">✱</span>
+      <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.01em">How it works.</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.55; color: #55554F; max-width: 52ch">One phone call starts it. We handle the rest, in English o en español.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 16px">
+        <div style="background: #FFFFFF; border: 1px solid #E5E4DC; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 14px 30px rgba(20,20,19,0.07)">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="width: 48px; height: 48px; border-radius: 999px; background: #D8F500; color: #141413; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; flex: 0 0 auto">1</span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">Call</span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #55554F">15 minutes on the phone. We ask about your business. No prep needed.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E5E4DC; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 14px 30px rgba(20,20,19,0.07)">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="width: 48px; height: 48px; border-radius: 999px; background: #D8F500; color: #141413; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; flex: 0 0 auto">2</span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">Plan</span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #55554F">You get a one-page plan: what connects, which agent fits, and what AI takes off your plate.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E5E4DC; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 14px 30px rgba(20,20,19,0.07)">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="width: 48px; height: 48px; border-radius: 999px; background: #D8F500; color: #141413; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; flex: 0 0 auto">3</span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">Setup</span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #55554F">Have your passwords ready. We connect everything with you on a video call.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E5E4DC; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 14px 30px rgba(20,20,19,0.07)">
+          <div style="display: flex; align-items: center; gap: 14px">
+            <span style="width: 48px; height: 48px; border-radius: 999px; background: #D8F500; color: #141413; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 22px; flex: 0 0 auto">4</span>
+            <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 20px">Work</span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #55554F">You go run your business. WhatsApp us when something breaks or you want more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" style="background: #D8F500; padding: 96px 24px">
+    <div style="max-width: 1180px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px">
+      <h2 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.01em">One price. No surprises.</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px">
+        <div style="background: #141413; color: #FFFFFF; border-radius: 20px; padding: 32px; flex: 1 1 300px; max-width: 460px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 44px">$499</span>
+          <span style="font-weight: 700; font-size: 18px">Setup</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B6B6AD">The interview, your plan, and everything connected and working on the agent that fits you.</p>
+        </div>
+        <div style="background: #141413; color: #FFFFFF; border-radius: 20px; padding: 32px; flex: 1 1 300px; max-width: 460px; display: flex; flex-direction: column; gap: 10px">
+          <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 44px">$99<span style="font-size: 20px; font-weight: 600; color: #B6B6AD">/mo</span></span>
+          <span style="font-weight: 700; font-size: 18px">Support and upkeep</span>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #B6B6AD">A human on WhatsApp, connections maintained, and new ones added as your business grows.</p>
+        </div>
+      </div>
+      <p style="margin: 0; font-size: 16px; font-weight: 600; max-width: 56ch">Cancel anytime. If it isn't doing what you expected, or you want to run it yourself, walk away.</p>
+      <div>
+        <a href="#cta" style="text-decoration: none; display: inline-block; background: #141413; color: #FFFFFF; font-weight: 700; font-size: 17px; padding: 16px 28px; border-radius: 999px">Book your 15-min call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section id="cta" style="background: #141413; color: #FFFFFF; padding: 110px 24px 64px">
+    <div style="max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; gap: 28px">
+      <span aria-hidden="true" style="color: #D8F500; font-size: 36px; line-height: 1">✱</span>
+      <h2 style="margin: 0; font-family: Georgia, 'Times New Roman', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px); line-height: 1.15; max-width: 24ch">You have questions. Your business has answers. Let's connect them.</h2>
+      <div>
+        <a href="#top" style="text-decoration: none; display: inline-block; background: #D8F500; color: #141413; font-weight: 700; font-size: 17px; padding: 16px 28px; border-radius: 999px">Book your 15-min call</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; border-top: 1px solid #3A3A35; padding-top: 24px; margin-top: 24px; font-size: 14px; color: #B6B6AD">
+        <span style="display: flex; align-items: center; gap: 8px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; color: #FFFFFF"><span aria-hidden="true" style="color: #D8F500; font-size: 20px; line-height: 1">✱</span> RENDI</span>
+        <span>English y español</span>
+        <span>WhatsApp support</span>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
